@@ -1,11 +1,14 @@
 import React from "react";
+import Header from "../../components/Header/Header";
+import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
 
-const Header = () => {
+const Home = () => {
   return (
-    <header>
-      <h1>Header</h1>
-    </header>
+    <div>
+      <Header />
+      <ExploreMenu />
+    </div>
   );
 };
 
-export default Header;
+export default Home;

@@ -1,0 +1,52 @@
+.header {
+  width: 100vw; /* Ensures it takes the full viewport width */
+  height: 100vh;
+  background: orange url("/header_img.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-contents {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header-contents h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+.header-contents p {
+  color: white;
+  font-size: 1vw;
+}
+
+.header-contents button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+}
+
+.header-contents button:hover {
+  background-color: orange; /* Light gray background on hover */
+}
+
+.header-contents button:active {
+  background-color: #ccc; /* Darker gray background when clicked */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
